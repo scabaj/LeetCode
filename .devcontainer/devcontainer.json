@@ -1,0 +1,25 @@
+// For format detail, see https://aka.ms/devcontainer.json
+// For config options, see README at https://github.com/devcontainers/templates/tree/main/src/cpp
+{
+    "name": "cpp-dev",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools-extensions-extension-pack"
+            ],
+            "settings": {
+                "cmake.loadCompileCommands": true,
+                "cmake.options.statusBarVisibility": "compact"
+            }
+        }
+    }
+    // ,
+    // 
+    // // it can be usefull to mount the build folder as a volume
+    // "mounts": [
+    //     "source=build-cache,target=/workspaces/dev_containers/build,consistency=cached"
+    // ]
+}
